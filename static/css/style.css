@@ -1,3 +1,415 @@
-h1 {
-	color: blue;
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+	margin-left: -10px;
+	margin-right:-10px;
+	
+}
+
+header{
+	font-family: cursive;
+}
+
+#divheader {
+	color: #ffffff;
+	font-size: 46px;
+	text-align: center;
+	font-family: cursive;
+}
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    right:20px;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.articles{
+	font-family: cursive;
+	text-align: center;
+}
+
+.articles a{
+	color: inherit;
+	text-decoration: none;
+}
+
+hr{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.articles a:hover {
+	color: #007bff;
+}
+
+
+.list1 {
+	font-size: 18px;
+	font-family: sans-serif;
+	list-style-position: inside;
+	margin-left: 18%;
+	text-align: left;
+}
+
+.fields{
+	
+	margin-left: 30%;
+	padding-bottom: 20px;
+	display: block;
+	font-size: 20px;
+}
+
+input[type=submit] {
+    margin-left: 30%;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.articleheader{
+	text-align: center;
+}
+
+.subheader{
+	margin-left: 20%;
+
+}
+
+button{
+	font-size: 14px;
+    font-weight: 800;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #868e96;
+    color: #fff;
+    margin-left: 39%;
+}
+
+p {
+	margin-left: 20%;
+	display: block;
+	font-family: sans-serif;
+	font-size: 18px;
+
+}
+
+.site-heading {
+	background-image: url("http://www.sapiensresearch.org/grupsapiens/img/home-bg.jpg");
+	background-position: center top;
+	background-size: cover;
+	padding: 250px 0;
+	margin-left: -50px;
+	margin-right: -10px;
+	margin-top: -10px;	
+	text-shadow: 0 2px #000000;
+}
+
+.article1 {
+	background-image: url("https://cdn.pixabay.com/photo/2017/04/05/01/15/colors-2203720__340.jpg");
+	background-position: center top;
+	background-size: cover;
+	padding: 250px 0;
+	margin-left: -50px;
+	margin-right: -10px;
+	margin-top: -10px;	
+	text-shadow: 0 2px #000000;
+}
+
+.article2 {
+	background-image: url("http://scd.france24.com/en/files/imagecache/home_1024/emissions/vignette-en-focus.png");
+	background-position: center top;
+	object-fit: cover;
+	padding: 250px;
+	margin-left: -50px;
+	margin-right: -10px;
+	margin-top: -10px;	
+	text-shadow: 0 2px #000000;
+}
+
+.article3 {
+	background-image: url("http://cdn.natgeotv.com.au/factsheets/thumbnails/braingames_howtoimproveyoursenseofdirection_signs.jpg?v=27&azure=false&scale=both&width=1024&height=560&mode=crop");
+	background-position: center top;
+	background-size: cover;
+    background-attachment:scroll;
+	background-repeat: no-repeat;
+	padding: 250px;
+	margin-left: -50px;
+	margin-right: -10px;
+	margin-top: -10px;	
+	text-shadow: 0 2px #000000;
+}
+
+.article4 {
+	background-image: url("http://www.stoczniagrafiki.pl/application/themes/sg_2015/img/contact-bg.jpg");
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 250px;
+	margin-left: -50px;
+	margin-right: -10px;
+	margin-top: -10px;	
+	text-shadow: 0 2px #000000;
+}
+
+.article5 {
+	background-image: url("https://d2utwzaizbvoog.cloudfront.net/themes/internal/img/contact-bg.jpg");
+	background-position: center top;
+	background-size: cover;
+	background-repeat:repeat;
+	padding: 250px;
+	margin-left: -50px;
+	margin-right: -10px;
+	margin-top: -10px;	
+	text-shadow: 0 2px #000000;
+}
+
+div.image {
+	width: 200px;
+	height: 200px;
+}
+
+.aboutus {
+	background-image: url("http://www.sapiensresearch.org/grupsapiens/img/about-bg.jpg");
+	background-position: center top;	
+	background-size: cover;
+	padding: 200px;
+	margin-left: -50px;
+	margin-right: -10px;
+	margin-top: -10px;	
+	text-shadow: 0 2px #000000;
+}
+
+.contact {
+	background-image: url("http://www.sapiensresearch.org/grupsapiens/img/contact-bg.jpg");
+	background-position: center top;	
+	background-size: cover;
+	padding: 250px;
+	margin-left: -50px;
+	margin-right: -10px;
+	margin-top: -10px;	
+	text-shadow: 0 2px #000000;
+}
+
+#row well{
+	margin-left: 30%;
+}
+
+
+form{
+	display: block;
+	margin-top: 0em;
+	margin-left: 10%;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	float: left; 
+	width: 5em; 
+	margin-right: 1em;
+}
+
+#contactdiv {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: 40px;
+	font-size: 20px;
+	color: red;
+}
+
+h4{
+    margin:  1% 0 1% 0;
+    text-align: center;
+}
+
+#commentheader{
+	margin-left: 10%;
+}
+
+#respond {
+  margin-top: 40px;
+}
+
+#respond input[type='text'], 
+#respond textarea {
+  margin-bottom: 10px;
+  display: block;
+  width: 80%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+
+  line-height: 1.4em;
+}
+
+#aboutme {
+	padding-top: 30px;
+	padding-bottom :50px;
+	margin-left: 25%;
+
+}
+
+.commentheader{
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#commentdisplay {
+	margin-left: 10%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+
+.container-fluid all{
+	margin-left: 30%;
+}
+
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    
+    list-style: none;
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
 }

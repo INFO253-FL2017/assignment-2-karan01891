@@ -1,64 +1,36 @@
-function validateform(){
-	var name = document.getElementById("name").value;
-	var subject = document.getElementById("subject").value;
-	var message = document.getElementById("message").value;
-	var email = document.getElementById("email").value;
-	var text = "Please enter "
-	var list1 = {"name":name, "subject":subject, "message":message, "email":email}
-	console.log(list1)
-	for (var key in list1) {
-			if (list1.hasOwnProperty(key)) {
-				if(list1[key] == ""){
-					text = text.concat(" ")
-					text = text.concat(key)
-					text = text.concat(";")
-					
-				}
-			}
-		}
-	console.log(text.length)
-	if (text.length == 13){
-		
-		return true;
-	}
-	else{document.getElementById("contactdiv").innerHTML =(text);
-	return false;
-	}
-	}
-	
-
-function append(){
-	var commentername = document.getElementById("comment_author").value;
-	var commentermessage = document.getElementById("comment").value;
-	var grades = {
-		name: commentername,
-		message: commentermessage
+function append5(){
+	var commentername5 = document.getElementById("comment_author").value;
+	var commentermessage5 = document.getElementById("comment").value;
+	var grades5 = {
+		name: commentername5,
+		message: commentermessage5
 	};
 
 	
-	var existingValues = JSON.parse(localStorage.getItem("comments")) ;
-	if (!existingValues){
-		existingValues = [];
+	var existingValues5 = JSON.parse(localStorage.getItem("comments5")) ;
+	if (!existingValues5){
+		existingValues5 = [];
 	}
-	existingValues.push(grades);
-	localStorage.comments = JSON.stringify(existingValues);
+	existingValues5.push(grades5);
+	localStorage.comments5 = JSON.stringify(existingValues5);
 	document.getElementById("commentdisplay").innerHTML = "";
-	for (var i=0;i<existingValues.length;i++)
+	for (var i=0;i<existingValues5.length;i++)
 	{
-	document.getElementById("commentdisplay").innerHTML += "   " + existingValues[i]['name'] +": "+ existingValues[i]['message'] + "<br>"+ "<br>";
+	document.getElementById("commentdisplay").innerHTML += "   " + existingValues5[i]['name'] +": "+ existingValues5[i]['message'] + "<br>"+ "<br>";
 	}
 	
 }
 
-function ondisplay() {
-	var existingValues = JSON.parse(localStorage.getItem("comments")) ;
+function ondisplay5() {
+	var existingValues5 = JSON.parse(localStorage.getItem("comments5")) ;
 	document.getElementById("commentdisplay").innerHTML = "";
-	for (var i=0;i<existingValues.length;i++)
+	for (var i=0;i<existingValues5.length;i++)
 	{
-	document.getElementById("commentdisplay").innerHTML += "   " + existingValues[i]['name'] +": "+ existingValues[i]['message'] + "<br>"+ "<br>";
+	document.getElementById("commentdisplay").innerHTML += "   " + existingValues5[i]['name'] +": "+ existingValues5[i]['message'] + "<br>"+ "<br>";
 	}
 
 }
+
 
 var tempMode = 1;
 function getWeather(lat, lon) {
@@ -132,4 +104,5 @@ var updateinter = setInterval(function(){
     alert("geolocation not available" + e);
   }
 }, 300000);
+
 getLocation();

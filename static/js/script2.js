@@ -1,61 +1,32 @@
-function validateform(){
-	var name = document.getElementById("name").value;
-	var subject = document.getElementById("subject").value;
-	var message = document.getElementById("message").value;
-	var email = document.getElementById("email").value;
-	var text = "Please enter "
-	var list1 = {"name":name, "subject":subject, "message":message, "email":email}
-	console.log(list1)
-	for (var key in list1) {
-			if (list1.hasOwnProperty(key)) {
-				if(list1[key] == ""){
-					text = text.concat(" ")
-					text = text.concat(key)
-					text = text.concat(";")
-					
-				}
-			}
-		}
-	console.log(text.length)
-	if (text.length == 13){
-		
-		return true;
-	}
-	else{document.getElementById("contactdiv").innerHTML =(text);
-	return false;
-	}
-	}
-	
-
-function append(){
-	var commentername = document.getElementById("comment_author").value;
-	var commentermessage = document.getElementById("comment").value;
-	var grades = {
-		name: commentername,
-		message: commentermessage
+function append2(){
+	var commentername2 = document.getElementById("comment_author").value;
+	var commentermessage2 = document.getElementById("comment").value;
+	var grades2 = {
+		name: commentername2,
+		message: commentermessage2
 	};
 
 	
-	var existingValues = JSON.parse(localStorage.getItem("comments")) ;
-	if (!existingValues){
-		existingValues = [];
+	var existingValues2 = JSON.parse(localStorage.getItem("comments2")) ;
+	if (!existingValues2){
+		existingValues2 = [];
 	}
-	existingValues.push(grades);
-	localStorage.comments = JSON.stringify(existingValues);
+	existingValues2.push(grades2);
+	localStorage.comments2 = JSON.stringify(existingValues2);
 	document.getElementById("commentdisplay").innerHTML = "";
-	for (var i=0;i<existingValues.length;i++)
+	for (var i=0;i<existingValues2.length;i++)
 	{
-	document.getElementById("commentdisplay").innerHTML += "   " + existingValues[i]['name'] +": "+ existingValues[i]['message'] + "<br>"+ "<br>";
+	document.getElementById("commentdisplay").innerHTML += "   " + existingValues2[i]['name'] +": "+ existingValues2[i]['message'] + "<br>"+ "<br>";
 	}
 	
 }
 
-function ondisplay() {
-	var existingValues = JSON.parse(localStorage.getItem("comments")) ;
+function ondisplay2() {
+	var existingValues2 = JSON.parse(localStorage.getItem("comments2")) ;
 	document.getElementById("commentdisplay").innerHTML = "";
-	for (var i=0;i<existingValues.length;i++)
+	for (var i=0;i<existingValues2.length;i++)
 	{
-	document.getElementById("commentdisplay").innerHTML += "   " + existingValues[i]['name'] +": "+ existingValues[i]['message'] + "<br>"+ "<br>";
+	document.getElementById("commentdisplay").innerHTML += "   " + existingValues2[i]['name'] +": "+ existingValues2[i]['message'] + "<br>"+ "<br>";
 	}
 
 }
@@ -132,4 +103,5 @@ var updateinter = setInterval(function(){
     alert("geolocation not available" + e);
   }
 }, 300000);
+
 getLocation();
